@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konig-Sign_up</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div id="con" class="con">
+
+            <div class="form">
+                <h1>LogIn Form</h1>
+            
+                <button id="butt1" type="submit">Login</button>
+                <button id="butt2" type="submit">Register</button>
+
+                <form action="JS.html" method="post" onsubmit="return validateTextbox()">
+                    
+                    <label for="email"></label>
+                    <input id="email" type="text" placeholder="Email Adrress" onchange="checkValue()">
+                    <br><br>
+
+                    <label for="password"></label>
+                    <input id="pass" type="text" placeholder="Password"><br><br>
+
+                    <h3>Forgot password?</h3>
+                    <button type=" submit" id="Loginbutton">Login</button>
+                </form>
+
+                <h4>Not a member? <span id="high">Register now</span></h4>
+            </div>
+        </div>
+
+        
+        <div id="con2" class="con2">
+            
+            <div class="form2">
+                <h1>Register Form</h1>
+            
+                <button id="butt12" type="submit">Login</button>
+                <button id="butt21"  type="submit">Register</button>
+
+                <form action="JS.html" method="post" onsubmit="return validateTextbox()">
+                    
+                    <label for="email"></label>
+                    <input id="email2" type="text" placeholder="Email Adrress">
+                    <br><br>
+
+                    <label for="create password"></label>
+                    <input id="crpass2" type="text" placeholder="Create Password">
+                    <br><br>
+
+                    <label for="password"></label>
+                    <input id="pass2" type="text" placeholder="Confirm Password"><br><br>
+
+                    <button type=" submit" id="Loginbutton2">Register</button>
+                </form>
+
+                <h4>Already a member? <span id="high2">Login now</span></h4>
+            </div>
+        </div>
+    </div>
+   
+<script src="LogIn.js"></script>
+</body>
+</html>
